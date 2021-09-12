@@ -7,3 +7,847 @@
     Text Domain: underscores-theme-child
 */
 
+/*############## DEFAULTS & FONTS ################*/
+
+body{
+    background: #eee8da;
+}
+
+.post,
+.page{
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #f6b960;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    color: #3b3b3b;
+    margin: 0;
+}
+
+/*combat default margins on WP widgets*/
+.widget{
+    margin: 0;
+}
+
+
+/*############## HEADER & FOOTER STYLES ############*/
+
+#primary-menu [aria-current="page"]{
+    text-decoration: underline;
+}
+
+#site-navigation a:hover{
+    color: #f6b960;
+}
+
+.site-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.about,
+.our-process,
+.homepage
+{
+    height: 500px;
+}
+
+.main-navigation-drop-down-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper{
+    width: 90%;
+    margin: 50px 0;
+    
+}
+
+.header-content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.site-branding{
+    width: 50%;
+}
+
+.main-navigation{
+    width: 50%;
+}
+
+.about .page-title-hero,
+.our-process .page-title-hero,
+.homepage .page-title-hero,
+.contact .page-title-hero,
+.main-navigation-drop-down-menu .page-title-hero
+{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.page-title-hero h1{
+    margin: 0;
+}
+
+.page-title-hero h3{
+    color: #fff;
+    margin: 0;
+    text-align: center;
+}
+
+
+/*hero bg images*/
+
+/*NO parallax for mobile devices*/
+
+.about{
+    background: url('img/about-hero') 80% no-repeat;
+    background-size: cover;
+}
+
+.our-process{
+    background: url('img/services-hero.jpg') 40% no-repeat;
+    background-size: cover;
+}
+
+.homepage{
+    background: url('img/homepage-hero.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.contact{
+    background: url('img/contact-hero.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.main-navigation-drop-down-menu{
+    background: url('img/404.jpg');
+    background-size: cover;
+}
+
+/*footer styling*/
+
+footer{
+    background: #dcc3be;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-flow: column wrap;
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+.menu-social-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-social-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0px;
+    width: 65%;
+}
+
+.menu-social-menu-container ul li a i._mi{
+    height: 45px;
+    width: 45px;
+    background: #cb7f5b;
+    color: #eee8da;
+    border-radius: 50%;
+    padding-top: 7px;
+    text-align: center;
+}
+
+.social-media-navigation ul{
+    list-style: none;
+    margin: 0;
+}
+
+.social-media-navigation ul li{
+    font-size: .9em;
+}
+
+.footer-copyright,
+.developer-credits{
+    text-align: center;
+}
+
+.footer-copyright{
+    font-size: 90%;
+}
+.developer-credits{
+    font-size: 70%;
+}
+
+.developer-credits p,
+.developer-credits a,
+.footer-copyright,
+.footer-copyright a{
+    text-decoration: none;
+    color: #eee8da;
+}
+
+/*############ DEFAULT PAGE.PHP ######*/
+
+.default-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*#########* 404.php PAGE ########*/
+.main-navigation-drop-down-menu >
+.page-title-hero{
+    margin-top: 0;
+}
+
+section.error-404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.error-404 > .content-wrapper{
+    margin-top: 25px;
+    background: rgba(0,0,0, .3);
+}
+
+.error-404  .page-content p{
+    color: #eee8da;
+    margin: 0 15px 15px 15px;
+}
+
+/*##################### ABOUT PAGE STYLES ############*/
+
+/*same as content wrapper, allows design deviation at larger screen sizes*/
+.about-wrapper{
+    width: 90%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.about-philosophy,
+.about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.about-philosophy a{
+    color: #3b3b3b;
+}
+
+.about-philosophy a:hover{
+    color: #f6b960;
+}
+
+.about-section{
+    background: #cb7f5b;
+}
+
+.about-section p{
+    color: #eee8da;
+}
+
+.about-text{
+    order: 1;
+}
+
+.self-portrait{
+    margin-bottom: 25px;
+}
+
+
+/*#################### PROCESS PAGE STYLES ###############*/
+
+.process-info,
+.process-exp{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-flow:column wrap;
+}
+
+.process-exp{
+    background: #cb7f5b;
+}
+
+.process-exp h1{
+    font-size: 2.1em;
+    text-align: center;
+    margin-top: 0;
+}
+
+.process-exp p{
+    color: #eee8da;
+}
+
+.process-cat{
+    margin-bottom: 25px;
+    
+}
+
+.process-info a{
+    color: #3b3b3b;
+}
+
+.process-info a:hover{
+    color:#f6b960;
+}
+
+
+
+/*#################### HOME PAGE ################*/
+
+.welcome-message,
+.service-summary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.welcome-message h1,
+.service-summary h1{
+    text-align: center;
+    margin-top: 0;
+}
+
+.service-summary{
+    background: #cb7f5b;
+}
+
+.service-summary h2{
+    margin: 15px 0px;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.service-short p{
+    color: #eee8da;
+    text-align: center;
+}
+
+.service-short{
+    margin-bottom: 35px;
+}
+
+.service-short:last-child{
+    margin-bottom: 0px;
+}
+
+span.word-swap::before{
+    content: "Balanced.";
+    animation: text 12s infinite;
+}
+
+@keyframes text{
+    12.5%{ content: "Warm.";}
+    25%{ content: "Energized.";}
+    37.5%{ content: "Clean.";}
+    50%{ content: "Creative.";}
+    62.5%{ content: "Cozy.";}
+    75%{ content: "Nuturing.";}
+    87.5%{ content:"Welcoming.";}
+    100%{ content: "Balanced.";}
+}
+
+
+
+
+/*####################### Contact Section ############*/
+
+#contact-sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#contact-sidebar h2{
+    text-align: center;
+}
+
+.contact-btn-link{
+    background: #f6b960;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.contact-btn-link a{
+    text-decoration: none;
+    color: #eee8da;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.chat-btn{
+    display: block;
+    padding: 15px 35px;
+}
+
+/*####################### CONTACT PAGE #############*/
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container .content-wrapper{
+    margin-top: 0;
+}
+
+.contact-container h1{
+    text-align: center;
+}
+
+
+.contact-container p {
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+#nf-form-1-cont.nf-form-cont{
+    width: 100%;
+}
+
+div.nf-form-content{
+    margin-top: 20px;
+}
+
+.nf-form-wrap.ninja-forms-form-wrap{
+    text-align: left;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+/*grab form fields to edit*/
+input#nf-field-1,
+input#nf-field-5,
+input#nf-field-2,
+textarea#nf-field-3
+{
+    background: rgba(255,255,255, .7);
+}
+
+input#nf-field-4{
+    width: 100%;
+    padding: 15px 35px;
+    background: #cb7f5b;
+}
+
+input#nf-field-4:hover{
+    color: #3b3b3b;
+    background: #eee8da;
+    transition: 1s;
+}
+
+/*####################### MEDIA QUERIES ##############*/
+
+@media (min-width: 600px){
+    
+    .summary-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    
+    .service-short{
+        width: 65%;
+    }
+    
+}
+
+/*nav layout defualt quirk*/
+@media (min-width: 37.5em){
+    .main-navigation ul{
+        display: none;
+    }
+/* this is set to display: flex after standard tablet width of 768*/
+}
+
+/*TABLET*/
+@media (min-width: 768px){
+    
+/*Default stylings*/
+    .about,
+    .our-process,
+    .homepage{
+        height: 900px;
+    }
+    
+    .content-wrapper{
+        max-width: 640px;
+        margin: 75px 0;
+    }
+    
+    .about-wrapper{
+        margin: 75px 0;
+    }
+    
+    h1{
+        font-size: 4.3em;
+    }
+    
+    h2{
+        font-size: 3.2em;
+        margin-bottom: 35px;
+    }
+    
+    p{
+        font-size: 1.725em;
+    }
+    
+/*site header and navigation*/  
+    
+    .nav-menu{
+        justify-content: space-between;
+        align-items: center;
+    }
+       
+    #site-navigation a{
+        font-size: 1.5em;
+        color: #fff;
+    }
+    
+    
+    .about .page-title-hero,
+    .our-process .page-title-hero,
+    .homepage .page-title-hero,
+    .contact .page-title-hero,
+    .main-navigation-drop-down-menu .page-title-hero{
+    margin-top: 100px;
+    text-align: center;
+}
+    
+    .page-title-hero h3{
+        font-size: 1.7em;
+    }
+    
+    
+/*### Parallax effect ###*/
+    
+    .about{
+        background-position: top center;
+        background-attachment: fixed;
+    }
+    
+    .our-process{
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .homepage{
+        background-attachment: fixed;
+        background-position: center;
+    }
+    
+    .contact{
+        background-attachment: fixed;
+        background-position: bottom;
+    }
+    
+    .main-navigation-drop-down-menu{
+        background-attachment: fixed;
+        background-position: bottom;
+    }
+
+/*### ABOUT PAGE TABLET ###*/
+
+    .about-wrapper{
+        margin: 75px 0;
+     
+        justify-content: center;
+        line-height: 0;
+    }
+
+    .about-text{
+       
+    }
+
+    .self-portrait{
+        width: 75%;
+    }
+    
+/*### PROCESS PAGE TABLET ###*/
+    
+    .process-exp h1{
+        font-size: 3.4em;
+    }
+    
+    .process-cat{
+        margin-bottom: 40px;
+    }
+    
+    
+    
+/*### HOMEPAGE TABLET ###*/
+    
+    .summary-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: row wrap;
+    }
+    
+    .service-summary > .content-wrapper{
+        max-width: 750px;
+    }
+    
+    .welcome-message h1{
+        margin-bottom: 15px;
+    }
+    
+    .service-short{
+        width: 32%;
+        margin-bottom: 0;
+    }
+    
+    .service-short h2{
+        font-size: 1.75em;
+    }
+    
+    .service-short p{
+        text-align: left;
+        font-size: 1.5em;
+        padding-right: 10px;
+    }
+    
+    
+/*## CONTACT SECTION TABLET ###*/
+    
+    #contact-section .content-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+    
+    .contact-btn-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin-top: 35px;
+    }
+    
+    .contact-btn-link a{
+        font-size: 2em;
+    }
+    
+/*####### CONTACT PAGE TABLET #########*/
+    
+    nf-fields-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    
+    nf-field{
+        width: 100%;
+    }
+    
+    nf-field:nth-child(1),
+    nf-field:nth-child(2){
+        width: 48%;
+    }
+    
+    div#nf-field-4-wrap > .nf-field-element{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    input#nf-field-4{
+        font-size: 1.7em;
+        padding: 0 35px;
+        width: 40%;
+    }
+    
+   
+} /* end TABLET STYLING */
+  
+/*fixes default nav style*/
+@media (min-width:769px){
+    .main-navigation ul{
+        display: flex;
+    }
+    
+    .main-navigation-drop-down-menu{
+        background-position: center;
+    }
+    
+    .error-404{
+        margin-bottom: 100px;
+    }
+}
+
+
+
+@media (min-width: 900px){
+/*    Parallax fix*/
+    .contact{
+        background-position: center;
+    }
+    
+    .contact > .content-wrapper > div.page-title-hero{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    
+}
+
+/*DESKTOP*/
+@media (min-width: 1200px){
+    
+/*## DEFAULT STYLINGS ##*/
+    
+    .content-wrapper{
+        max-width: 1000px;
+        margin: 100px 0;
+    }
+    
+ 
+    
+/*### HEADER & FOOTER ###*/
+    
+    .nav-menu{
+        justify-content: space-around;
+    }
+    
+    #site-navigation a{
+        font-size: 1.8em;
+    }
+    
+    #menu-social-menu{
+        max-width: 40%;
+    }
+    
+
+/*### ABOUT SECTION ###*/
+    
+    .about-wrapper{
+        max-width: 1400px;
+        margin: 0;
+        justify-content: space-between;
+    }
+    
+    .about-text{
+        order: 0;
+        width: 55%;
+        text-align: center;
+        
+    }
+    
+    .self-portrait{
+        max-width: 40%;
+        margin: 0;
+    }
+    
+/*###### PROCESS SECTION #####*/
+    
+    .process-cat{
+        margin-bottom: 60px;
+    }
+    
+    .process-cat h1{
+        margin-bottom: 30px;
+    }
+    
+/*### HOMEPAGE SECTION  ###*/
+    
+    .service-summary > .content-wrapper{
+        max-width: 1000px;
+    }
+    
+    .service-short{
+        width: 30%;
+    }
+    
+    .service-short h2{
+        font-size: 2.4em;
+    }
+    
+    .service-short p{
+        padding: 0;
+    }
+      
+    
+}
+
+/*#### JS Styles ###*/
+
+/*reveal on scroll styling!*/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}

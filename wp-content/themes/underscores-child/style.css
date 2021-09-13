@@ -106,11 +106,10 @@ p{
 .header-content{
     display: flex;
     justify-content:space-between;
-    align-items: center;
 }
 
 .site-branding{
-    width: 50%;
+    width: 25%;
 }
 
 .main-navigation{
@@ -123,7 +122,6 @@ p{
 .contact .page-title-hero,
 .main-navigation-drop-down-menu .page-title-hero
 {
-    margin-top: 50px;
     text-align: center;
 }
 
@@ -575,12 +573,16 @@ input#nf-field-4:hover{
     .homepage .page-title-hero,
     .contact .page-title-hero,
     .main-navigation-drop-down-menu .page-title-hero{
-    margin-top: 100px;
-    text-align: center;
+    margin-top: 50px;
 }
     
     .page-title-hero h3{
         font-size: 1.7em;
+    }
+    
+    #rmp_menu_trigger-19{
+        top: 73px;
+        right: 7%;
     }
     
     
@@ -780,6 +782,18 @@ input#nf-field-4:hover{
     #menu-social-menu{
         max-width: 40%;
     }
+    
+    .site-branding{
+        width: 20%;
+    }
+    
+    .about .page-title-hero,
+    .our-process .page-title-hero,
+    .homepage .page-title-hero,
+    .contact .page-title-hero,
+    .main-navigation-drop-down-menu .page-title-hero{
+    margin-top: 0px;
+}
     
 
 /*### ABOUT SECTION ###*/

@@ -29,6 +29,14 @@ get_header();
             </div>
         <?php endwhile; ?>
         
+        <?php query_posts('pagename=Our-Process'); ?>
+        <?php while (have_posts()) : the_post();
+        
+            $page_link = get_permalink(); ?>
+        
+        <?php endwhile; ?>
+        <?php wp_reset_query(); ?>
+        
         
         
         <div class="service-summary">
@@ -43,11 +51,13 @@ get_header();
                     ?>
 
                     <div class="service-short">
+                        <a href="<?php echo $page_link; ?>"> 
                             <div class="service-img">
                                 <?php if($serv_img){
                                         echo    wp_get_attachment_image    ($serv_img, $size);
                                 } ?>
                             </div>
+                        </a>
                         <h2><?php the_title();?></h2>
                         <p><?php echo $summary ?></p>
                     </div>

@@ -81,7 +81,7 @@ p{
 .our-process,
 .homepage
 {
-    height: 500px;
+    min-height: 500px;
 }
 
 .main-navigation-drop-down-menu{
@@ -99,8 +99,7 @@ p{
 
 .content-wrapper{
     width: 90%;
-    margin: 50px 0;
-    
+    margin: 50px 0;  
 }
 
 .header-content{
@@ -135,13 +134,12 @@ p{
     text-align: center;
 }
 
-
 /*hero bg images*/
 
 /*NO parallax for mobile devices*/
 
 .about{
-    background: url('img/about-hero') 80% no-repeat;
+    background: url('img/about-hero.jpg') 80% no-repeat;
     background-size: cover;
 }
 
@@ -151,7 +149,7 @@ p{
 }
 
 .homepage{
-    background: url('img/homepage-hero.jpg') center no-repeat;
+    background: url('img/homepage-hero1.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -454,7 +452,6 @@ span.word-swap::before{
     text-align: center;
 }
 
-
 .contact-container p {
     color: #fff;
     margin-bottom: 50px;
@@ -529,8 +526,8 @@ input#nf-field-4:hover{
 /*Default stylings*/
     .about,
     .our-process,
-    .homepage{
-        height: 900px;
+    .homepage {
+        min-height: 900px;
     }
     
     .content-wrapper{
@@ -590,16 +587,13 @@ input#nf-field-4:hover{
     
     .about{
         background-position: top center;
-        background-attachment: fixed;
     }
     
     .our-process{
         background-position: center;
-        background-attachment: fixed;
     }
     
     .homepage{
-        background-attachment: fixed;
         background-position: center;
     }
     
@@ -794,6 +788,23 @@ input#nf-field-4:hover{
     .main-navigation-drop-down-menu .page-title-hero{
     margin-top: 0px;
 }
+    
+    
+/*##### Parallax Effect ####*/
+    
+/*current iteration only available on desktop*/
+ .about{
+        background-attachment: fixed;
+    }
+    
+    .our-process{
+        background-attachment: fixed;
+    }
+    
+    .homepage{
+        background-attachment: fixed;
+    }   
+
     
 
 /*### ABOUT SECTION ###*/

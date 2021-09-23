@@ -62,13 +62,15 @@
                     ?>
                 </nav><!-- #site-navigation -->
             </div> <!-- .header-content -->
-        </div> <!-- .content-wrapper -->
+         </div> <!-- .content-wrapper -->  
             
             <div class="page-title-hero">
                <?php
                 if (is_front_page()) : ?>
-                <h1><?php echo get_bloginfo('name'); ?></h1>
-                <h3><?php echo get_bloginfo('description'); ?></h3>
+                
+                        <h1><?php echo get_bloginfo('name'); ?></h1>
+                        <h3><?php echo get_bloginfo('description'); ?></h3>
+
                 <?php
                 elseif ( $post_slug == 'contact') :
                 ?>
@@ -101,4 +103,5 @@
                 
            
         </div><!-- .page-title-hero -->
+        
 	</header><!-- #masthead -->
